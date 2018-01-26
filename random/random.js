@@ -19,6 +19,5 @@ exports.rand = function rand (req, res) {
         if(tmp > max_rand)
         	max_rand = tmp;
     }
-    res.write({ number :  tmp});
-    res.end();
+    res.send({ number :  tmp});
 };

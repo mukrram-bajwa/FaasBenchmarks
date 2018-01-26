@@ -12,24 +12,22 @@
 var request = require('request').defaults({ encoding: null }),
 	md5 = require("md5");
 
-exports.md5 = function(event, context, callback) {
+exports.md5 = function md5(req, res) {
         
         var uri = event.uri;      
 
         request.get(uri, function (error, response, body) {
     		if (!error && response.statusCode == 200) {
     			if(error) {
-                    // This will be used for when we hook up API Gateway.
-                    callback(null, { message : error });
+                    res.send({ message : error });
                     return;
                 }
         		var data = new Buffer(body).toString();
         		var hash = md5(data);
-        		callback(null, { imageHash : hash });
+        		rs.send({ imageHash : hash });
                 return;
     		} else {
-    			// This will be used for when we hook up API Gateway.
-            	callback(null, { message : error });
+    			res.send({ message : error });
     		}
 		});
 };

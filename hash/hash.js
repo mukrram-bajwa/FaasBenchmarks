@@ -20,16 +20,16 @@ exports.md5 = function(event, context, callback) {
     		if (!error && response.statusCode == 200) {
     			if(error) {
                     // This will be used for when we hook up API Gateway.
-                    context.done(null, { message : error });
+                    callback(null, { message : error });
                     return;
                 }
         		var data = new Buffer(body).toString();
         		var hash = md5(data);
-        		context.done(null, { imageHash : hash });
+        		callback(null, { imageHash : hash });
                 return;
     		} else {
     			// This will be used for when we hook up API Gateway.
-            	context.done(null, { message : error });
+            	callback(null, { message : error });
     		}
 		});
 };

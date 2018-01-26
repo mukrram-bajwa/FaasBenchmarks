@@ -21,19 +21,19 @@ exports.rss = function(event, context, callback) {
                     console.log("Error parsing data.");
                     // This will be used for when we hook up API Gateway.
                     // It does no harm just being here for the Lambda only tutorial.
-                    context.done(null, { message : error });
+                    callback(null, { message : error });
                     return;
                 }
                 // This will be used for when we hook up API Gateway.
                 // It does no harm just being here for the Lambda only tutorial.
-                context.done(null, { message : result.rss.channel[0].item[0].title[0]._ });
+                callback(null, { message : result.rss.channel[0].item[0].title[0]._ });
 
                 return;
             });
         } else {
             // This will be used for when we hook up API Gateway.
             // It does no harm just being here for the Lambda only tutorial.
-            context.done(null, { message : error });
+            callback(null, { message : error });
         }
     });
 };

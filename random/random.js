@@ -21,5 +21,5 @@ exports.rand = function(event, context, callback) {
                             max_rand = tmp;
                     }
                     // This will be used for when we hook up API Gateway.
-                    context.done(null, { number :  tmp});
+                    callback(null, { number :  tmp});
 };

@@ -15,7 +15,7 @@ exports.rand = function(event, context, callback) {
                 
                     var generator = new MersenneTwister();
                     var max_rand = 0;
-                    for(var i = 1; i < 60000000; i++) {
+                    for(var i = 1; i < 1000000; i++) {
                         var tmp = generator.random_int31();
                         if(tmp > max_rand)
                             max_rand = tmp;

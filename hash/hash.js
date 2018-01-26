@@ -14,7 +14,7 @@ var request = require('request').defaults({ encoding: null }),
 
 exports.md5 = function md5(req, res) {
         
-        var uri = event.uri;      
+        var uri = req.query.uri;      
 
         request.get(uri, function (error, response, body) {
     		if (!error && response.statusCode == 200) {

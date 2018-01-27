@@ -1,10 +1,16 @@
 let threshold=20;
-let days=$1,hours=$2,minutes=$3;
+let days=$6,hours=$7,minutes=$8;
 let iterations=$(((days*24*3)+(hours*3)+(minutes/20)));
 for((counter=0;counter<iterations;counter++));
 do
-        ./workload_generator_module.sh random random rand &
-        ./workload_generator_module.sh hash hash md5 &
-        ./workload_generator_module.sh rss feed rss &
+        if [ "$1" == "lambda" ]; then
+                ./aws_lambda_workload_generator_module.sh $2 $3 random rand &
+                ./aws_lambda_workload_generator_module.sh $2 $4 hash md5 &
+                ./aws_lambda_workload_generator_module.sh $2 $5 feed rss &
+        elif [ "$1" == "gcf" ]; then
+                echo "GCF not configured yet."
+        else
+                exit 1;
+        fi
         sleep 1200;
 done

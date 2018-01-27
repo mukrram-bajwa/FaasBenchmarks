@@ -24,7 +24,7 @@ exports.md5 = function md5(req, res) {
                 }
         		var data = new Buffer(body).toString();
         		var hash = md5(data);
-        		rs.send({ imageHash : hash });
+        		res.send({ imageHash : hash });
                 return;
     		} else {
     			res.send({ message : error });

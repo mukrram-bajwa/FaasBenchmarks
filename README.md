@@ -14,7 +14,7 @@ Deployment script takes eight arguments and all are listed below:
 1. Number of days to run benchmark.
 1. Number of minutes to run benchmark.
 ### Startup
-Startup script also takes eight arguments and all are listed below:
+Startup script takes six arguments and all are listed below:
 1. Number of years to run benchmark.
 1. Number of days to run benchmark.
 1. Number of minutes to run benchmark.

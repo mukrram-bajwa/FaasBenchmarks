@@ -5,6 +5,7 @@ Used to automate the benchmark.
     Deployment script takes eight arguments and all are listed below:
     1. Cloud Functions type(```lambda/gcf```).
     2. Code storage type
+    
         * For AWS lambda the possible values are s3 or local.
         * For GCF it is the full path to the code.
     3. For AWS Lambda it is the code location for Random function and for GCF it is trigger type.

@@ -1,7 +1,7 @@
 # Benchmarks for AWS Lambda and Google Cloud Functions
 ## Scripts 
 Used to automate the benchmark.
-### Deployment
+### Deployment (```workload_generator.sh```)
 Deployment script takes eight arguments and all are listed below:
 1. Cloud Functions type(```lambda/gcf```).
 1. Code:
@@ -13,7 +13,7 @@ Deployment script takes eight arguments and all are listed below:
 1. Number of years to run benchmark.
 1. Number of days to run benchmark.
 1. Number of minutes to run benchmark.
-### Startup
+### Startup (```workload_generator_latency.sh```)
 Startup script takes six arguments and all are listed below:
 1. Number of years to run benchmark.
 1. Number of days to run benchmark.

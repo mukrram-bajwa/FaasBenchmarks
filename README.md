@@ -13,7 +13,7 @@ Deployment script takes eight arguments and all are listed below:
 1. Number of days to run benchmark.
 1. Number of hours to run benchmark.
 1. Number of minutes to run benchmark.
-### Startup (```workload_generator_latency.sh```)
+### Startup [```workload_generator_latency.sh```](https://github.com/mukrram-bajwa/FaasBenchmarks/blob/master/scripts/startup/workload_generator_latency.sh)
 Startup script takes six arguments and all are listed below:
 1. Number of days to run benchmark.
 1. Number of hours to run benchmark.

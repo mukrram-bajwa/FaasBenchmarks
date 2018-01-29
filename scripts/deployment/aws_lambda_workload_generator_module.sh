@@ -16,4 +16,4 @@ do
                 echo $((end-start)) >> $3_$1.txt;
         done
 done
-./cleanup.sh $3$4;
+./aws_cleanup.sh $3$4;

@@ -8,7 +8,9 @@ do
                 ./aws_lambda_workload_generator_module.sh $2 $4 hash md5 &
                 ./aws_lambda_workload_generator_module.sh $2 $5 feed rss &
         elif [ "$1" == "gcf" ]; then
-                echo "GCF not configured yet."
+                ./gcf_lambda_workload_generator_module.sh $2 $3 random rand &
+                ./gcf_lambda_workload_generator_module.sh $2 $4 hash md5 &
+                ./gcf_lambda_workload_generator_module.sh $2 $5 feed rss &
         else
                 exit 1;
         fi

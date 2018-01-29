@@ -19,5 +19,5 @@ Startup script takes six arguments and all are listed below:
 1. Number of hours to run benchmark.
 1. Number of minutes to run benchmark.
 1. Time interval in minutes.
-1. File path to store metrices.
+1. File path to store metrics.
 1. Http endpoint to trigger Cloud Functions.

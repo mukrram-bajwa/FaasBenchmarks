@@ -1,7 +1,7 @@
 # Benchmarks for AWS Lambda and Google Cloud Functions
 ## Scripts 
 Used to automate the benchmark.
-### Deployment (```workload_generator.sh```)[https://github.com/mukrram-bajwa/FaasBenchmarks/blob/master/scripts/deployment/workload_generator.sh]
+### Deployment [```workload_generator.sh```](https://github.com/mukrram-bajwa/FaasBenchmarks/blob/master/scripts/deployment/workload_generator.sh)
 Deployment script takes eight arguments and all are listed below:
 1. Cloud Functions type(```lambda/gcf```).
 1. Code:

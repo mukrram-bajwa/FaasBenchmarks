@@ -7,13 +7,14 @@ Deployment script takes eight arguments and all are listed below:
 1. Code storage type:
     * For AWS lambda the possible values are s3 or local.
     * For GCF it is the full path to the code.
-1. For AWS Lambda it is the code location for Random function and for GCF it is trigger type.
-1. For AWS Lambda it is the code location for Hash function and for GCF it is trigger type.
-1. For AWS Lambda it is the code location for RSS function and for GCF it is trigger type.
+1. For AWS Lambda it is the code location for Random function and for GCF it is trigger type for Random function.
+1. For AWS Lambda it is the code location for Hash function and for GCF it is trigger type for Hash function.
+1. For AWS Lambda it is the code location for RSS function and for GCF it is trigger type for RSS function.
 1. Number of years to run benchmark.
 1. Number of days to run benchmark.
 1. Number of minutes to run benchmark.
 ### Startup
+Startup script also takes eight arguments and all are listed below:
 1. Number of years to run benchmark.
 1. Number of days to run benchmark.
 1. Number of minutes to run benchmark.
